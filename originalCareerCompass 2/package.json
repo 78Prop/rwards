@@ -1,0 +1,40 @@
+{
+  "name": "careercompass2",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx server.ts",
+    "start": "tsx server.ts",
+    "build": "tsc",
+    "init": "tsx db/init.ts",
+    "db:generate": "drizzle-kit generate:sqlite",
+    "db:push": "tsx db/init.ts",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "@types/react": "^19.1.9",
+    "@types/react-bootstrap": "^1.0.1",
+    "@types/uuid": "^10.0.0",
+    "better-sqlite3": "^12.2.0",
+    "blockcypher": "^0.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "drizzle-orm": "^0.44.4",
+    "express": "^4.21.2",
+    "react": "^19.1.1",
+    "react-bootstrap": "^2.10.10",
+    "uuid": "^11.1.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.2.0",
+    "@types/pg": "^8.15.5",
+    "@types/ws": "^8.18.1",
+    "drizzle-kit": "^0.31.4",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.1",
+    "typescript": "^5.9.2"
+  }
+}

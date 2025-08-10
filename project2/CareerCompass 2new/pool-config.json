@@ -1,0 +1,178 @@
+{
+    "enabled": true,
+    "coin": "bitcoin",
+    "address": "bc1qj93mnxgm0xuwyh3jvvqurjxjyq8uktg4y0sad6",
+    
+    "rewardRecipients": {
+        "bc1qj93mnxgm0xuwyh3jvvqurjxjyq8uktg4y0sad6": 0.0
+    },
+
+    "paymentProcessing": {
+        "enabled": true,
+        "minimumPayment": 0.001,
+        "payoutScheme": "PPS",
+        "payoutInterval": 3600,
+        "allowAutoPool": true
+    },
+
+    "poolServer": {
+        "enabled": true,
+        "connectionTimeout": 600,
+        "stratumHost": "0.0.0.0",
+        "stratumPorts": [3333, 4444, 5555],
+        "maxConnectionsPerIp": 10,
+        "tcpProxyProtocol": false,
+        "websocket": {
+            "enabled": true,
+            "path": "/mining-ws"
+        }
+    },
+
+    "ports": {
+        "3333": {
+            "diff": 32,
+            "varDiff": {
+                "minDiff": 8,
+                "maxDiff": 512,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            },
+            "tls": false,
+            "asicBoost": true,
+            "websocket": false,
+            "protocol": "stratum+tcp",
+            "host": "stratum+tcp://localhost",
+            "port": 3333,
+            "name": "KloudBugs Cafe Pool (PPS)",
+            "isPrimary": true,
+            "fee": 1.0
+        },
+        "4444": {
+            "diff": 32,
+            "varDiff": {
+                "minDiff": 8,
+                "maxDiff": 512,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            },
+            "tls": false,
+            "asicBoost": true,
+            "websocket": false,
+            "protocol": "stratum+tcp",
+            "host": "stratum+tcp://localhost",
+            "port": 4444,
+            "name": "TERA Social Justice Pool (PPS)",
+            "isPrimary": true,
+            "fee": 1.0
+        },
+        "5555": {
+            "diff": 32,
+            "varDiff": {
+                "minDiff": 8,
+                "maxDiff": 512,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            },
+            "tls": false,
+            "asicBoost": true,
+            "websocket": false,
+            "protocol": "stratum+tcp",
+            "host": "stratum+tcp://localhost",
+            "port": 5555,
+            "name": "TERA TOKEN POOL (PPS)",
+            "isPrimary": true,
+            "fee": 1.0
+        },
+        "6666": {
+            "diff": 32,
+            "varDiff": {
+                "minDiff": 8,
+                "maxDiff": 512,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            },
+            "tls": false,
+            "asicBoost": true,
+            "websocket": false,
+            "protocol": "stratum+tcp",
+            "host": "stratum+tcp://localhost",
+            "port": 6666,
+            "name": "KloudBugs Premium Pool (PPS)",
+            "isPrimary": false,
+            "fee": 1.0
+        },
+        "7777": {
+            "diff": 32,
+            "varDiff": {
+                "minDiff": 8,
+                "maxDiff": 512,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            },
+            "tls": false,
+            "asicBoost": true,
+            "websocket": false,
+            "protocol": "stratum+tcp",
+            "host": "stratum+tcp://localhost",
+            "port": 7777,
+            "name": "TERA Community Pool (PPS)",
+            "isPrimary": false,
+            "fee": 1.0
+        },
+        "8888": {
+            "diff": 32,
+            "varDiff": {
+                "minDiff": 8,
+                "maxDiff": 512,
+                "targetTime": 15,
+                "retargetTime": 90,
+                "variancePercent": 30
+            },
+            "tls": false,
+            "asicBoost": true,
+            "websocket": false,
+            "protocol": "stratum+tcp",
+            "host": "stratum+tcp://localhost",
+            "port": 8888,
+            "name": "TERA Mining Hub (PPS)",
+            "isPrimary": false,
+            "fee": 1.0
+        }
+    },
+
+    "daemons": [
+        {
+            "host": "127.0.0.1",
+            "port": 8332,
+            "user": "rpcuser",
+            "password": "rpcpassword"
+        }
+    ],
+
+    "p2p": {
+        "enabled": false
+    },
+
+    "redis": {
+        "host": "127.0.0.1",
+        "port": 6380,
+        "password": "tera_pool_redis_2024",
+        "db": 0
+    },
+
+    "api": {
+        "enabled": true,
+        "hashrateWindow": 300,
+        "updateInterval": 5,
+        "port": 5000,
+        "ssl": false,
+        "blocks": 50,
+        "payments": 50,
+        "password": "your-api-password"
+    }
+}

@@ -1,0 +1,41 @@
+[MINING LOG]
+----------------------------------------
+Initializing mining pools...
+✅ All mining pools started successfully!
+
+Pool: KloudBugs Cafe Pool
+Port: 3333
+Protocol: stratum+tcp://0.0.0.0:3333
+
+Pool: TERA Social Justice Pool
+Port: 4444
+Protocol: stratum+tcp://0.0.0.0:4444
+
+Pool: TERA TOKEN POOL
+Port: 5555
+Protocol: stratum+tcp://0.0.0.0:5555
+
+[MINER CONNECTIONS]
+----------------------------------------
+Miner-01 connected to KloudBugs Cafe Pool
+Miner-02 connected to TERA Social Justice Pool
+Miner-03 connected to TERA TOKEN POOL
+Miner-04 connected to KloudBugs Cafe Pool
+...
+Miner-40 connected to TERA TOKEN POOL
+
+[MINING STATISTICS]
+----------------------------------------
+Total Active Miners: 40
+Hash Rate Distribution:
+- KloudBugs Cafe Pool: 33.33%
+- TERA Social Justice Pool: 33.33%
+- TERA TOKEN POOL: 33.34%
+
+[SHARE SUBMISSIONS]
+----------------------------------------
+Miner-01 submitted 152 shares to KloudBugs Cafe Pool - Earned: 0.00228000 BTC
+Miner-02 submitted 143 shares to TERA Social Justice Pool - Earned: 0.00214500 BTC
+Miner-03 submitted 167 shares to TERA TOKEN POOL - Earned: 0.00250500 BTC
+...
+[Continuous mining activity...]

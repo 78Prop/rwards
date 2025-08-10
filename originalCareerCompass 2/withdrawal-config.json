@@ -1,0 +1,11 @@
+{
+  "bitcoin": {
+    "addresses": {
+      "mining_pool": "bc1qj93mnxgm0xuwyh3jvvqurjxjyq8uktg4y0sad6",
+      "withdrawal": "bc1qj93mnxgm0xuwyh3jvvqurjxjyq8uktg4y0sad6"
+    },
+    "confirmations": 3,
+    "min_withdrawal": 0.001,
+    "withdrawal_fee": 0.0001
+  }
+}
